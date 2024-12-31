@@ -53,7 +53,7 @@ const PlayerInfo = () => {
 
         <div className="text-center md:text-left">
           {!isLoading ? (
-            <h1 className="font-bold text-[1.5rem] md:text-[2rem] line-clamp-1">
+            <h1 className="font-bold text-[24px] md:text-[32px] line-clamp-1">
               {data?.name}
             </h1>
           ) : (
@@ -66,16 +66,14 @@ const PlayerInfo = () => {
                 <Image
                   className="rounded-full w-[30px] h-[30px] md:w-[35] md:h-[35]"
                   src="https://img.uniscore.com/football/team/$%7Bdecode(teamId)%7D/image/small"
-                  alt="Player Image"
-                  width={40}
+                  alt="icon team"
+                  width={35}
                   height={35}
                   loading="lazy"
                 />
                 <div className="pl-1 md:pl-3">
-                  <p className="text-[0.8125rem] text-left">
-                    {data?.team?.slug}
-                  </p>
-                  <p className="text-[0.6875rem] text-[#8D8E92] text-left line-clamp-1">
+                  <p className="text-[13px] text-left">{data?.team?.slug}</p>
+                  <p className="text-[11px] text-[#8D8E92] text-left line-clamp-1">
                     Contract until{" "}
                     {convertTimestampToDate(data?.contractUntilTimestamp)}
                   </p>
@@ -95,7 +93,7 @@ const PlayerInfo = () => {
           label="Nationality"
           value={data?.nationality?.name}
           images={
-            "https://img.uniscore.com/football/country/gy0or5jh43qwzv3/image/small"
+            "https://img.uniscore.com/football/team/$%7Bdecode(teamId)%7D/image/small"
           }
           isLoading={!isLoading}
         />

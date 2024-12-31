@@ -6,11 +6,12 @@ type Props = {
   width?: number;
 };
 
-export const Loading = ({ hieght = "4", pt = "2", width = 24 }: Props) => {
+export const Loading = ({ hieght = "4", pt = "2", width = 100 }: Props) => {
   return (
     <div className={`space-y-4 pt-${pt}`}>
       <div
-        className={`h-${hieght} w-${width} bg-gray-200/15 animate-pulse rounded-md opacity-25`}
+        className={`h-${hieght} bg-gray-200/15 animate-pulse rounded-md opacity-25`}
+        style={{ width: `${width}px` }}
       ></div>
     </div>
   );

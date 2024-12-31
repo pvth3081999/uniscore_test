@@ -3,31 +3,32 @@
 import React from "react";
 import Image from "next/image";
 import svgIconFootball from "@/components/svg/svg_icon_football";
+import logoImage from "public/Icons/logo+hamburger.png";
 
 const Header = () => {
   return (
     <header className="bg-gradient-to-r from-[#091557] via-[#122690] to-[#203397] text-white px-4 md:px-8">
       <div className="container mx-auto flex sm:items-center justify-between py-3">
         <div className="logo gap-4 md:gap-10 items-center sm:flex">
-          <div className="pb-1">
+          <div className="pb-1 ">
             <Image
-              src="/Icons/logo+hamburger.png"
+              src={logoImage}
               alt="Uniscore Logo"
-              className="h-auto w-[6.25rem] sm:w-[7.9375rem]"
-              width={127}
-              height={17}
+              priority={true}
+              quality={50}
+              className="w-[127px] h-auto"
             />
           </div>
 
           <div className="flex gap-1">
             <div
-              className="flex justify-center sm:px-3 sm:py-2 py-1 px-2 w-auto max-w-full cursor-pointer items-center gap-1 rounded-[5.4375rem] 
-            border-[0.09375rem] font-oswald  font-medium uppercase hover:brightness-125 border-solid border-[#1456FF] bg-gradient-to-tl from-[#0C1A4C] via-[#0C3089] to-[#1553EF] text-white"
+              className="flex justify-center sm:px-3 sm:py-2 py-1 px-2 w-auto max-w-full cursor-pointer items-center gap-1 rounded-[87px] 
+            border-[1.5px] font-oswald  font-medium uppercase hover:brightness-125 border-solid border-[#1456FF] bg-gradient-to-tl from-[#0C1A4C] via-[#0C3089] to-[#1553EF] text-white"
             >
               <svg
                 width="20"
                 height="20"
-                className="w-4 h-4 sm:w-[1.25rem] sm:h-[1.25rem]"
+                className="w-4 h-4 sm:w-[20px] sm:h-[20px]"
                 viewBox="0 0 20 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

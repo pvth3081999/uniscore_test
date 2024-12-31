@@ -45,7 +45,7 @@ const MacthList = () => {
                     <Image
                       className="rounded-full w-[15px] h-[15px] md:w-[20] md:h-[20]"
                       src="https://img.uniscore.com/football/team/$%7Bdecode(teamId)%7D/image/small"
-                      alt="Player Image"
+                      alt="icon team"
                       width={20}
                       height={20}
                       loading="lazy"
@@ -58,7 +58,7 @@ const MacthList = () => {
                     <Image
                       className="rounded-full w-[15px] h-[15px] md:w-[20] md:h-[20]"
                       src="https://img.uniscore.com/football/team/$%7Bdecode(teamId)%7D/image/small"
-                      alt="Player Image"
+                      alt="icon team"
                       width={20}
                       height={20}
                       loading="lazy"
@@ -96,9 +96,11 @@ const MacthList = () => {
                   {item.homeScore.current === item.awayScore.current && (
                     <Image
                       src="/Icons/chair.svg"
-                      alt="Uniscore Logo"
+                      alt="icon"
                       width={20}
-                      height={10}
+                      height={12}
+                      className="w-[20px] h-[12px]"
+                      loading="lazy"
                     />
                   )}
                   {item.homeScore.current > item.awayScore.current && (

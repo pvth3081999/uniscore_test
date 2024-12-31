@@ -32,15 +32,21 @@ const InfoCard: React.FC<InfoCardProps> = ({
     <div
       className={`${borderClass} h-[68px] border-[rgb(39,42,49)] border-opacity-100 flex flex-col justify-center pl-4`}
     >
-      <p className="text-gray-400 text-[0.6875rem] pb-1">{label}</p>
+      <p className="text-gray-400 text-[11px]] pb-1">{label}</p>
       <div
         className={`flex ${additionalValue ? "items-start" : "items-center"} `}
       >
         {isLoading ? (
           <>
-            <Image src={images} alt="Player Image" width={24} height={24} />
+            <Image
+              src={images}
+              alt="icons info"
+              width={24}
+              height={24}
+              loading="lazy"
+            />
             <div className="flex-col pl-3">
-              <p className="font-bold text-[0.8125rem] line-clamp-1">{value}</p>
+              <p className="font-bold text-[13px] line-clamp-1">{value}</p>
 
               {additionalValue && (
                 <p className="text-sm text-gray-400 line-clamp-1">
